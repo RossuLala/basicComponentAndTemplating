@@ -13,4 +13,5 @@ export class AppComponent {
     'fazeb',
     'szin'
   ];
+  show = false;
 }
