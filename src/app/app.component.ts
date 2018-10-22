@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
 
-  demo(ev: Event){
-    console.log(ev);
+  demo(ev: MouseEvent){
+    console.log(ev.layerX);
   }
 }

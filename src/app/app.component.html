@@ -18,6 +18,12 @@
 </ul>
 
 
+<button
+(click)     = "toogle()"
+(dblclick)  = "demo($event)"
+>Toggle</button>
+
+
 <div *ngIf="show">
   <p>Nagy Gergő</p>
 </div>
@@ -27,11 +33,6 @@
   <p>ngClass demo</p>
 </div>
 
-
-<button
-  (click)     = "toogle()"
-  (mouseover) = "demo($event)"
->Toggle</button>
 
 <app-alma></app-alma>
 <app-alma></app-alma>
