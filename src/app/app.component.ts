@@ -14,4 +14,9 @@ export class AppComponent {
     'szin'
   ];
   show = false;
+
+
+  toogle(){
+    this.show = !this.show;
+  }
 }

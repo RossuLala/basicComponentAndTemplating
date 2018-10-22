@@ -23,9 +23,12 @@
 </div>
 
 
-<div [ngClass] = "{ 'valami':true }">
+<div [ngClass] = "{ 'valami':show }">
   <p>ngClass demo</p>
 </div>
+
+
+<button (click) = "toogle()">Toggle</button>
 
 <app-alma></app-alma>
 <app-alma></app-alma>
