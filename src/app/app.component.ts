@@ -19,4 +19,9 @@ export class AppComponent {
   toogle(){
     this.show = !this.show;
   }
+
+
+  demo(ev: Event){
+    console.log(ev);
+  }
 }
