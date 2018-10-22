@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'basicComponentAndTemplating';
+  title = '---basicComponentAndTemplating';
+  events = [
+    'sziget',
+    'efot',
+    'fazeb',
+    'szin'
+  ];
 }
