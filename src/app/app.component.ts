@@ -14,6 +14,8 @@ export class AppComponent {
     'szin'
   ];
   show = false;
+  klikkeljunke = false;
+  inputContent: string;
 
 
   toogle(){

@@ -18,9 +18,16 @@
 </ul>
 
 
+<input type="text" [(ngModel)] = "inputContent">
+
+<div>
+  {{inputContent}}
+</div>
+
 <button
 (click)     = "toogle()"
 (dblclick)  = "demo($event)"
+[disabled]  = "klikkeljunke"
 >Toggle</button>
 
 
