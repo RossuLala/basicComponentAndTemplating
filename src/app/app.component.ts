@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '---basicComponentAndTemplating';
+  title = '---title változó';
   events = [
     'sziget',
     'efot',
@@ -17,6 +17,20 @@ export class AppComponent {
   klikkeljunke = false;
   inputContent: string;
 
+  pipeDemo = [
+    {
+      'id': 1,
+      'name': 'Puffancs'
+    },
+    {
+      'id': 2,
+      'name': 'Lala'
+    },
+    {
+      'id': 3,
+      'name': 'Tojás'
+    }
+  ];
 
   toogle(){
     this.show = !this.show;
