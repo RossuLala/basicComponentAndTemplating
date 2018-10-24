@@ -1,10 +1,14 @@
 <ul>
   <li *ngFor="let event of events">
+    <img src="{{event.pic}}" alt="" height="50px">
+    <img [src]="event.pic" alt="" height="50px">
     {{ event.name}}
     <button (click)="delete(event.id)">törlés</button>
   </li>
 </ul>
 
+<input type="text" #newEventNameInput>
+<button (click)="add(newEventNameInput)"> ÚJ </button>
 
 <pre>
   {{ events | json }}
