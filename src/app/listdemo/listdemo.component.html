@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let event of events">
+    {{ event.name}}
+    <button (click)="delete(event.id)">törlés</button>
+  </li>
+</ul>
+
+
+<pre>
+  {{ events | json }}
+</pre>
