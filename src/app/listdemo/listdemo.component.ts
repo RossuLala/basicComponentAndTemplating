@@ -54,14 +54,16 @@ export class ListdemoComponent {
   }
 
 
-  add(newEventNameInput: HTMLInputElement){
+  add(newEventNameInput: HTMLInputElement, newEventPicInput: HTMLInputElement){
     console.log( newEventNameInput.value );
                                      // (logikai vizsgálat) ? haigaz  : hahamis
     const maxId = this.events.reduce(( x, y ) => x.id > y.id ? x : y).id;
 
     // spread oparator [...this.events]
-    this.events = [...this.events, new EventModel(maxId + 1, newEventNameInput.value)]
+    this.events = [...this.events, new EventModel(maxId + 1, newEventNameInput.value, newEventPicInput.value)]
+
     newEventNameInput.value = '';
+    newEventPicInput.value = '';
   }
 
 }

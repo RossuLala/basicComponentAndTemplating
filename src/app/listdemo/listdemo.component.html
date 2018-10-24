@@ -7,9 +7,19 @@
   </li>
 </ul>
 
-<input type="text" #newEventNameInput>
-<button (click)="add(newEventNameInput)"> ÚJ </button>
+<div>
+  <label for="eventName">név:</label>
+  <input type="text" #newEventNameInput id="eventName">
+</div>
 
+<div>
+  <label for="eventPic">kép:</label>
+  <input type="text" #newEventPicInput id="eventPic">
+</div>
+
+<div>
+  <button (click)="add(newEventNameInput, newEventPicInput)"> ÚJ</button>
+</div>
 <pre>
   {{ events | json }}
 </pre>
