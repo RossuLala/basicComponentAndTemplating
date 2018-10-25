@@ -2,7 +2,7 @@
   <li *ngFor="let event of events">
     <img src="{{event.pic}}" alt="" height="50px">
     <img [src]="event.pic" alt="" height="50px">
-    {{ event.name}}
+    {{ event.name | uppercase | azenpipeom:3}}
     <button (click)="edit(event.id)">módosítás</button>
     <button (click)="delete(event.id)">törlés</button>
   </li>

@@ -15,22 +15,22 @@ export class ListdemoComponent {
     this.events = [
       {
         id: 1,
-        name: 'sziget',
+        name: 'sziget ',
         pic: 'https://www.fokert.hu/wp-content/uploads/2017/08/25_eves_a_sziget_fesztival_1-1.png'
       },
       {
         id: 2,
-        name: 'fezen',
+        name: 'fezen ',
         pic: 'https://www.jegyekitt.hu/img/fezen-2017-fehervari-zenei-fesztival.jpg'
       },
       {
         id: 3,
-        name: 'rockmaraton',
+        name: 'rockmaraton ',
         pic: 'https://www.programturizmus.hu/media/image/big/ajanlat/kultura/koncert-zene/rockzene/2/725-rockmaraton-fesztival.jpg'
       },
       {
         id: 4,
-        name: 'oktoberfest',
+        name: 'oktoberfest ',
         pic: 'https://www.gastronomicslc.com/wp/wp-content/uploads/2016/08/snowbird-oktoberfest.jpg'
       }
     ];
