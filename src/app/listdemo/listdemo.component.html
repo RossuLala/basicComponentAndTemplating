@@ -3,22 +3,23 @@
     <img src="{{event.pic}}" alt="" height="50px">
     <img [src]="event.pic" alt="" height="50px">
     {{ event.name}}
+    <button (click)="edit(event.id)">módosítás</button>
     <button (click)="delete(event.id)">törlés</button>
   </li>
 </ul>
 
 <div>
   <label for="eventName">név:</label>
-  <input type="text" #newEventNameInput id="eventName">
+  <input type="text" #newEventNameInput id="eventName" [value]="modifyEvent.name">
 </div>
 
 <div>
   <label for="eventPic">kép:</label>
-  <input type="text" #newEventPicInput id="eventPic">
+  <input type="text" #newEventPicInput id="eventPic" [value]="modifyEvent.pic">
 </div>
 
 <div>
-  <button (click)="add(newEventNameInput, newEventPicInput)"> ÚJ</button>
+  <button (click) = "save(newEventNameInput, newEventPicInput)"> MENTÉS </button>
 </div>
 <pre>
   {{ events | json }}
